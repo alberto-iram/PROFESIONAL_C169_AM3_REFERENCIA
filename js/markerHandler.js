@@ -2,12 +2,12 @@ AFRAME.registerComponent("markerhandler", {
   init: async function () {
 
     this.el.addEventListener("markerFound", () => {
-      console.log("marker is found")
+      console.log("Se encontró el marcador")
       this.handleMarkerFound();
     });
 
     this.el.addEventListener("markerLost", () => {
-      console.log("marker is lost")
+      console.log("Se perdió el marcador")
       this.handleMarkerLost();
     });
   },
