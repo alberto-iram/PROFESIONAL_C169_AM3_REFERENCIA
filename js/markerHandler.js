@@ -23,7 +23,7 @@ AFRAME.registerComponent("markerhandler", {
     ratingButton.addEventListener("click", function () {
       swal({
         icon: "warning",
-        title: "Califica tu platillo",
+        title: "Calificar platillo",
         text: "Procesando calificación"
       });
     });
