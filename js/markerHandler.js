@@ -12,33 +12,33 @@ AFRAME.registerComponent("markerhandler", {
     });
   },
   handleMarkerFound: function () {
-    // Changing button div visibility
+    // Cambiar la visibilidad del botón div
     var buttonDiv = document.getElementById("button-div");
     buttonDiv.style.display = "flex";
 
     var ratingButton = document.getElementById("rating-button");
     var orderButtton = document.getElementById("order-button");
 
-    // Handling Click Events
+    // Usar los eventos de clic
     ratingButton.addEventListener("click", function () {
       swal({
         icon: "warning",
-        title: "Rate Dish",
-        text: "Work In Progress"
+        title: "Califica tu platillo",
+        text: "Procesando calificación"
       });
     });
 
     orderButtton.addEventListener("click", () => {
       swal({
         icon: "https://i.imgur.com/4NZ6uLY.jpg",
-        title: "Thanks For Order!",
-        text: "Your order will be served soon at your table!"
+        title: "¡Gracias por tu orden!",
+        text: "¡Recibirás tu orden pronto!"
       });
     });
   },
 
   handleMarkerLost: function () {
-    // Changing button div visibility
+    // Cambiar la visibilidad del botón div
     var buttonDiv = document.getElementById("button-div");
     buttonDiv.style.display = "none";
   }
